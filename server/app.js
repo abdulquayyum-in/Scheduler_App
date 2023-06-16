@@ -10,6 +10,9 @@ const app = express()
 app.use(express.json())
 
 const port = config.get("PORT")
+app.get('/', (req, res) => {
+  res.send("server started successfully")
+});
 app.use("/api/user",userRouter)
 app.use("/api/user",TaskRouter)
 // app.get("/*", (req, res) => {

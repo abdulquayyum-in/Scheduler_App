@@ -25,7 +25,7 @@ function Signup(props){
             <div className="col-lg-6">
               <div className="card-body p-md-5 mx-md-4">
                 <div className="text-center">
-                  <img src="https://appadvice.com/cdn-cgi/mirage/eaec890b32ee033953d1542683469dcff009881bb0833aa6a0a8b9f19c50cef4/1280/https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/51/e2/9b/51e29b09-d791-3b39-5b5d-0296a2a89fe7/source/512x512bb.jpg"
+                        <img src="https://f-droid.org/repo/com.thatsmanmeet.taskyapp/en-US/icon_APUGcyU_Nzfgc0HWHVi1rQ5upKZvazIjxNV0LKdhruU=.png"
                     style={{width: "125px"}} alt="logo"/>
                   <h4 className="mt-1 mb-5 pb-1">WELCOME TO TASKY APPLICATION</h4>
                 </div>

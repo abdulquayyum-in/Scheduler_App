@@ -9,17 +9,11 @@ import { useNavigate } from "react-router-dom";
 function Tasks() {
   let i = 0;
   let navigate = useNavigate()
-
   const [tasks, settask] = useState([])
-
   const signout = () => {
     localStorage.removeItem("token")
     navigate("/")
-
-
   }
-
-
   const onclick = async (e) => {
     try {
       let token = localStorage.getItem("token")
@@ -65,7 +59,6 @@ function Tasks() {
   }, [])
 
   const onclickid = (e)=>{
-   
     console.log(e.target.id);
   }
 

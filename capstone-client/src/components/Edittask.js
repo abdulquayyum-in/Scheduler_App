@@ -27,17 +27,13 @@ function Edittask(props) {
   const onclicktask = async (e) => {
     try {
       let token = localStorage.getItem("token")
-      console.log(token)
       token = JSON.parse(token)
       let taskid = e.target.id
-      console.log(token);
-      console.log(taskid);
       let { data } = await axios.put(`/api/user/task/${taskid}`,updatetask, {
         headers: {
           "auth-token": token
         },
       })
-      console.log(data);
       alert(data.success)
       let res = await axios.post("/api/user/task/alltasks", {}, {
         headers: {
